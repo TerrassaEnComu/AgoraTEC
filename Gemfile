@@ -9,7 +9,8 @@ gem "decidim", "0.9.3"
 gem "puma", "~> 3.0"
 gem "uglifier", ">= 1.3.0"
 gem "faker", "~> 1.8.4"
-gem "delayed_job_active_record"
+gem "delayed_job_active_record", "~> 4.1.2"
+gem "daemons", "~> 1.2.6"
 
 group :development, :test do
   gem "byebug", platform: :mri
