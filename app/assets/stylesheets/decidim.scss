@@ -1,7 +1,7 @@
 // // Variables
 // 
-// $primary: #ef604d;
-// $secondary: #599aa6;
+$primary: #EF3340;
+$secondary: #72246C;
 // $success: #57d685;
 // $warning: #ffae00;
 // $alert: #ec5840;
@@ -16,3 +16,7 @@
 // $google: #dd4b39;
 
 @import "decidim/application";
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libre Franklin', sans-serif;
+}
