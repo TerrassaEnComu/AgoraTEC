@@ -5,6 +5,7 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 gem "decidim", "0.9.3"
+gem "decidim-verifications",  path: "decidim-verifications"
 
 gem "puma", "~> 3.0"
 gem "uglifier", ">= 1.3.0"
