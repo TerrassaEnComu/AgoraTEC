@@ -97,6 +97,7 @@ es:
           new:
             send: Solicitar verificación
             title: Sube tu documento de Identidad
+            checkbox: De acuerdo con la política de privacidad de datos de carácter personal, autorizo la posibilidad de compartir estos datos con Cataluña en Común con el fin de comprobar la identidad en los procesos de votación de órganos, listas, cargos, y procesos electorales que se puedan realizar en relación a los acuerdos establecidos. 
           update:
             error: Hubo un problema al volver a subir tu documento
             success: El documento se ha resubido correctamente

@@ -97,6 +97,7 @@ ca:
           new:
             send: Sol·licita la verificació
             title: Penja el document d'identitat
+            checkbox: D’acord amb la política de privacitat de dades de caràcter personal autoritzo la possibilitat de compartir aquestes dades amb Catalunya en Comú amb la finalitat de comprovar la identitat en els processos de votació d’òrgans, llistes, càrrecs i tres processos electorals que es puguin realitzar en relació als acords establerts.
           update:
             error: S'ha produït un problema en tornar a carregar el document
             success: El document s'ha tornat a carregar correctament
