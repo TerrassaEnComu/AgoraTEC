@@ -1,4 +1,10 @@
 es:
+  activemodel:
+    attributes:
+      id_document_information:
+        document_number: Número de documento (con la letra en mayúscula)
+      id_document_upload:
+          document_number: Número de documento (con la letra en mayúscula)
   decidim:
     verifications:
       privacy: De acuerdo con la política de privacidad de datos de carácter personal, autorizo la posibilidad de compartir estos datos con Cataluña en Común con el fin de comprobar la identidad en los procesos de votación de órganos, listas, cargos, y procesos electorales que se puedan realizar en relación a los acuerdos establecidos.
