@@ -6,5 +6,9 @@ es:
       id_document_upload:
           document_number: Número de documento (con la letra en mayúscula)
   decidim:
+    devise:
+      registrations:
+        new:
+          privacy: política de privacidad de datos
     verifications:
-      privacy: De acuerdo con la política de privacidad de datos de carácter personal, autorizo la posibilidad de compartir estos datos con Cataluña en Común con el fin de comprobar la identidad en los procesos de votación de órganos, listas, cargos, y procesos electorales que se puedan realizar en relación a los acuerdos establecidos.
+      privacy: De acuerdo con la política de privacidad de datos de carácter personal autorizo formar parte de Terrassa en Comú y la posibilidad de compartir estos datos con Catalunya en Comú con el fin de comprobar la identidad en los procesos de votación de órganos, listas, cargos y tres procesos electorales que se puedan realizar en relación a los acuerdos establecidos.
