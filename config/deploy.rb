@@ -1,14 +1,16 @@
 # frozen_string_literal: true
 
-lock "3.8.0"
+lock "3.11.0"
 
-set :application, "decidim"
+set :application, "agoratec"
 set :repo_url, "https://github.com/TerrassaEnComu/AgoraTec.git"
-set :linked_files, fetch(:linked_files, []).push("config/database.yml", ".rbenv-vars")
-set :linked_dirs, fetch(:linked_dirs, []).push("log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/cache", "public/uploads")
-set :rbenv_type, :user
-set :rbenv_ruby, "2.4.2"
-set :rbenv_path, "/home/ruby-data/.rbenv"
 set :delayed_job_workers, 1
+set :deploy_to, "/home/ruby-data/app"
 
-set :passenger_restart_with_touch, true
+set :rbenv_type, :user
+
+append :linked_files, "config/application.yml"
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/cache", "public/system", "public/uploads"
+
+set :puma_bind, "tcp://0.0.0.0:3000"
+set :puma_user, fetch(:user)

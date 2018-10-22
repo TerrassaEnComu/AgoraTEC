@@ -12,6 +12,7 @@ gem "faker", "~> 1.8.4"
 gem "delayed_job_active_record", "~> 4.1.2"
 gem "daemons", "~> 1.2.6"
 gem "airbrake", "~> 5.0"
+gem "figaro"
 
 group :development, :test do
   gem "byebug", platform: :mri
@@ -27,10 +28,10 @@ group :development do
   gem "web-console"
 
   # deploy
-  gem "capistrano", "3.8.0", require: false
-  gem "capistrano-bundler", "~> 1.2", require: false
-  gem "capistrano-passenger"
-  gem "capistrano-rails", "1.1.8", require: false
-  gem "capistrano-rbenv"
+  gem "capistrano", "~> 3.11.0", require: false
+  gem "capistrano-bundler", "~> 1.3", require: false
+  gem "capistrano3-puma"
+  gem "capistrano-rails", "~> 1.3", require: false
+  gem "capistrano-rbenv", "~> 2.1"
   gem "capistrano3-delayed-job", "~> 1.0"
 end
