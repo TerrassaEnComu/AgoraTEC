@@ -1,4 +1,6 @@
 # frozen_string_literal: true
 
-server "agora.terrassaencomu.cat", roles: %w(app db web worker)
+server "prod-decidim-terrassaencomu", user: "ruby-data", roles: %w(app db web worker)
 set :branch, "master"
+set :rails_env, "production"
+
