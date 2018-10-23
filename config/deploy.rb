@@ -14,3 +14,4 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bund
 
 set :puma_bind, "tcp://0.0.0.0:3000"
 set :puma_user, fetch(:user)
+append :rbenv_map_bins, 'puma', 'pumactl'
