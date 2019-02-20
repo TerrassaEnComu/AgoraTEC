@@ -14,6 +14,8 @@ gem "daemons", "~> 1.2.6"
 gem "airbrake", "~> 5.0"
 gem "figaro"
 
+gem "deface"
+
 group :development, :test do
   gem "byebug", platform: :mri
 
