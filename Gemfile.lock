@@ -323,6 +323,11 @@ GEM
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
+    deface (1.3.2)
+      nokogiri (>= 1.6)
+      polyglot
+      rails (>= 4.1)
+      rainbow (>= 2.1.0)
     delayed_job (4.1.5)
       activesupport (>= 3.0, < 5.3)
     delayed_job_active_record (4.1.3)
@@ -521,6 +526,7 @@ GEM
     pg_search (2.1.4)
       activerecord (>= 4.2)
       activesupport (>= 4.2)
+    polyglot (0.3.5)
     powerpack (0.1.2)
     premailer (1.11.1)
       addressable
@@ -740,6 +746,7 @@ DEPENDENCIES
   daemons (~> 1.2.6)
   decidim (= 0.15.2)
   decidim-dev (= 0.15.2)
+  deface
   delayed_job_active_record (~> 4.1.2)
   faker (~> 1.8.4)
   figaro
@@ -755,4 +762,4 @@ RUBY VERSION
    ruby 2.5.3p105
 
 BUNDLED WITH
-   1.16.6
+   1.17.3
