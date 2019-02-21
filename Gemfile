@@ -18,6 +18,8 @@ gem "deface"
 
 group :development, :test do
   gem "byebug", platform: :mri
+  gem "rspec-rails", "~> 3.8"
+  gem "rubocop", require: false
 
   gem "decidim-dev", DECIDIM_VERSION
 end
