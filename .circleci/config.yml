@@ -1,18 +1,11 @@
-# Ruby CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-ruby/ for more details
-#
-version: 2
+# version: 2 # CircleCI version
+# https://medium.com/@einenlum/testing-your-app-with-docker-compose-on-circleci-ffd4cc8e2cfa
 jobs:
   build:
-    docker:
-      # specify the version you desire here
-      - image: circleci/ruby:2.5.3
+    machine: true # Use a Linux VM instead of docker environment
 
     steps:
       - checkout
-
-      - setup_remote_docker
 
       - run:
           name: install dependencies
