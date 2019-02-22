@@ -9,7 +9,7 @@ jobs:
       # specify the version you desire here
       - image: circleci/ruby:2.5.3
 
-    working_directory: ~/repo
+    working_directory: ~/app
 
     steps:
       - checkout
