@@ -17,6 +17,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
+            docker-compose -v &&
             docker-compose up -d
 
       # Database setup
