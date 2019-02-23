@@ -13,6 +13,7 @@ jobs:
       # Database setup
       - run: docker-compose run app bundle exec rake db:create
       - run: docker-compose run app bundle exec rake db:schema:load
+      - run: docker-compose run app bundle exec rake db:seed
       # run tests!
       - run:
           name: run tests
