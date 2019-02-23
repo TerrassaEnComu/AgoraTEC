@@ -24,6 +24,10 @@ group :development, :test do
   gem "decidim-dev", DECIDIM_VERSION
 end
 
+group :test do
+  gem "capybara"
+end
+
 group :development do
   gem "letter_opener_web", "~> 1.3.0"
   gem "listen", "~> 3.1.0"
