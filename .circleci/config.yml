@@ -10,11 +10,12 @@ jobs:
           command: |
             docker-compose -v &&
             docker-compose up -d
-      # Database setup
-      - run: docker-compose run app bundle exec rake db:create
-      - run: docker-compose run app bundle exec rake db:schema:load
-      - run: docker-compose run app bundle exec rake db:seed
-      # run tests!
+      - run:
+          name: create database
+          command: docker-compose run app bundle exec rake db:create
+      - run:
+          name: load database schema
+          command: docker-compose run app bundle exec rake db:schema:load
       - run:
           name: run tests
           command: |
