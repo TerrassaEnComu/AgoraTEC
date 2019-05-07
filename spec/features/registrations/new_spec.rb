@@ -3,7 +3,7 @@
 require "rails_helper"
 
 feature "new registration" do
-  let(:organization) { create :organization, :with_tos }
+  let(:organization) { create :organization }
   before do
     app_host = (organization.host ? "http://#{organization.host}:3000" : nil)
     Capybara.app_host = app_host
