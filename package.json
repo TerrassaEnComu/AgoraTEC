@@ -1,6 +1,6 @@
 {
-  "name": "AgoraTEC",
-  "version": "0.15.2",
+  "name": "agoratec",
+  "version": "0.18.0",
   "private": true,
   "dependencies": {}
 }

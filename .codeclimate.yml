@@ -1,0 +1,41 @@
+---
+version: "2"
+plugins:
+  bundler-audit:
+    enabled: true
+  fixme:
+    enabled: true
+    exclude_patterns:
+      - .rubocop.yml
+    grep:
+      enabled: true
+      config:
+        patterns:
+          no-trailing-whitespace:
+            pattern: \s*$
+            annotation: "Don't leave trailing whitespace"
+            severity: minor
+            categories: Style
+          no-tabs:
+            pattern: "    "
+            annotation: "Don't use hard tabs"
+            severity: minor
+            categories: Style
+      exclude_patterns:
+        - "**/*/locales/*.yml"
+        - "**/*/*.svg"
+    rubocop:
+      enabled: true
+      checks:
+        Rubocop/RSpec/DescribeClass:
+          enabled: false
+    stylelint:
+      enabled: true
+exclude_patterns:
+  - "**/vendor/"
+  - "node_modules/"
+  - "db/"
+  - "config/environments/"
+  - "development_app/"
+  - "spec/decidim_dummy_app/"
+  - "coverage/"
