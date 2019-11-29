@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-lock "3.11.0"
+lock "3.11.2"
 
 set :application, "agoratec"
 set :repo_url, "https://github.com/TerrassaEnComu/AgoraTec.git"

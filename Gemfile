@@ -3,16 +3,15 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
-DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", branch: "0.18-stable" }
-gem "decidim", DECIDIM_VERSION
+gem "decidim", git: "https://github.com/decidim/decidim", branch: "0.19-stable"
 
+gem "airbrake", "~> 5.0"
+gem "daemons", "~> 1.2.6"
+gem "delayed_job_active_record", "~> 4.1.2"
+gem "faker", "~> 1.8.4"
+gem "figaro"
 gem "puma", "~> 3.0"
 gem "uglifier", ">= 1.3.0"
-gem "faker", "~> 1.8.4"
-gem "delayed_job_active_record", "~> 4.1.2"
-gem "daemons", "~> 1.2.6"
-gem "airbrake", "~> 5.0"
-gem "figaro"
 
 gem "deface"
 
@@ -21,7 +20,7 @@ group :development, :test do
   gem "rspec-rails", "~> 3.8"
   gem "rubocop", require: false
 
-  gem "decidim-dev", DECIDIM_VERSION
+  gem "decidim-dev"
 end
 
 group :test do
