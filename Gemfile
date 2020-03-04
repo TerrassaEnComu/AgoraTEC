@@ -10,7 +10,7 @@ gem "daemons", "~> 1.2.6"
 gem "delayed_job_active_record", "~> 4.1.2"
 gem "faker", "~> 1.8.4"
 gem "figaro"
-gem "puma", "~> 3.0"
+gem "puma", "~> 3.12"
 gem "uglifier", ">= 1.3.0"
 
 gem "deface"
